@@ -10,37 +10,37 @@ if [ "$options" = "Saal1_native" ]; then
     mplayer "http://cdn.c3voc.de/s1_native_sd.webm" -title Saal1_native
 
 elif [ "$options" = "Saal1_translated" ]; then 
-    mplayer "http://usa.cch.c3voc.de/s1_translated_hd.webm" -title Saal1_translated
+    mplayer "http://cdn.c3voc.de/s1_translated_hd.webm" -title Saal1_translated
 
 elif [ "$options" = "Saal2_native" ]; then
-        mplayer "http://usa.cch.c3voc.de/s2_native_hd.webm" -title Saal2_native
+        mplayer "http://cdn.c3voc.de/s2_native_hd.webm" -title Saal2_native
 
 elif [ "$options" = "Saal2_translated" ];then
-        mplayer "http://usa.cch.c3voc.de/s2_translated_hd.webm" -title Saal2_translated
+        mplayer "http://cdn.c3voc.de/s2_translated_hd.webm" -title Saal2_translated
 
 elif [ "$options" = "SaalG_native" ]; then
-        mplayer "http://usa.cch.c3voc.de/s3_native_hd.webm" -title SaalG_native
+        mplayer "http://cdn.c3voc.de/s3_native_hd.webm" -title SaalG_native
 
 elif [ "$options" = "SaalG_translated" ]; then
-        mplayer "http://usa.cch.c3voc.de/s3_translated_hd.webm" -title SaalG_translated
+        mplayer "http://cdn.c3voc.de/s3_translated_hd.webm" -title SaalG_translated
 
 elif [ "$options" = "Saal6_native" ]; then
-        mplayer "http://usa.cch.c3voc.de/s4_native_hd.webm" -title Saal6_native
+        mplayer "http://cdn.c3voc.de/s4_native_hd.webm" -title Saal6_native
 
 elif [ "$options" = "Saal6_translated" ]; then
-        mplayer "http://usa.cch.c3voc.de/s4_translated_hd.webm" -title Saal6_translated
+        mplayer "http://cdn.c3voc.de/s4_translated_hd.webm" -title Saal6_translated
 
 elif [ "$options" = "ARTE" ]; then
     rtmpdump -v -r "rtmp://artestras.fc.llnwd.net/artestras" -a "artestras" -f "LNX 11,0,1,98" -W "http://www.arte.tv/flash/mediaplayer/mediaplayer.swf" -p "http://videos.arte.tv/de/videos/html/index-4268756.html" -y "s_artestras_scst_geoFRDE_de?s=1320220800&h=878865258ebb8eaa437b99c3c7598998" --live | mplayer - -title ARTE
 
 elif [ "$options" = "Lounge" ]; then
-        mplayer "http://usa.cch.c3voc.de" -title Lounge
+        mplayer "http://cdn.c3voc.de" -title Lounge
 
 elif [ "$options"= "Ambient" ]; then
-        mplayer "http://usa.cch.c3voc.de/ambient" -title Ambient
+        mplayer "http://cdn.c3voc.de/ambient" -title Ambient
 
 elif [ "$options" = "Podcast" ]; then
-        mplayer "http://usa.cch.c3voc.de/s5_native_hd.webm" -title Podcast
+        mplayer "http://cdn.c3voc.de/s5_native_hd.webm" -title Podcast
  
 elif [ "$options" = "quit" ]; then
         echo "You have selected $options"
